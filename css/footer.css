@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/********************************************************
+**************** SAIBA MAIS CONTAINER *******************
+********************************************************/
+
+.contato {
+    background: url('../img/back-contato.png') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contato .max-container {
+    padding: 50px 0;
+}
+
+.contato h1 {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    display: block;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.contato input {
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.contato input::placeholder,
+.contato textarea::placeholder {
+    color: #000;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.contato .btn-send {
+    margin-top: 20px;
+    background: #5e432e;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    border: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.contato .btn-send:hover {
+    background: rgba(255, 255, 255, .5);
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 0px 20px;
+    background: rgba(255, 255, 255, .9);
+    border: 0;
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+}
+
+.contato textarea {
+    height: 250px;
+    padding: 20px;
+}
+
+
+/********************************************************
+******************  FOOTER CONTAINER  *******************
+********************************************************/
+
+.main-footer {
+    background: #f7f7f7;
+}
+
+.main-footer .max-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.main-footer .max-container>* {
+    flex: 1;
+}
+
+.main-footer figure {
+    text-align: right;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.main-footer figure img {
+    width: 100%;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+.main-footer .box-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.main-footer .box-info img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.box-info a+a {
+    margin-left: 20px;
+}
+
+.main-footer .gama-icon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+footer.copy {
+    background: #000;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+}
+
+@media all and (max-width:767px) {
+    .main-footer .max-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-footer .gama-icon img {
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .main-footer .box-info {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .main-footer figure img {
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+    .main-footer figure {
+        text-align: center;
+    }
+}
+
+@media all and (max-width:567px) {
+    footer.copy {
+        font-size: 12px;
+    }
+    .main-footer .gama-icon img {
+        max-width: 200px;
+    }
+    .main-footer figure img {
+        width: 100%;
+        max-width: 100px;
+    }
+    .main-footer figure {
+        font-size: 20px;
+    }
+    .contato input,
+    .contato textarea {
+        font-size: 12px;
+    }
+    .contato textarea {
+        height: 200px;
+    }
+    .contato .btn-send {
+        font-size: 14px;
+    }
+}
